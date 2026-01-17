@@ -67,10 +67,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/envguard.git"
+    "url": "https://github.com/princeofv/envguards.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/envguard/issues"
+    "url": "https://github.com/princeofv/envguards/issues"
   },
-  "homepage": "https://github.com/yourusername/envguard#readme"
+  "homepage": "https://github.com/princeofv/envguards#readme"
 }
