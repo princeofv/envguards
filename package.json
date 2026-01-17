@@ -1,0 +1,76 @@
+{
+  "name": "envguards",
+  "version": "1.0.0",
+  "description": "Framework-agnostic environment variable validation, documentation generator, and .env.example creator",
+  "author": "",
+  "license": "MIT",
+  "keywords": [
+    "env",
+    "environment",
+    "variables",
+    "validation",
+    "dotenv",
+    "config",
+    "typescript",
+    "cli",
+    "documentation",
+    "env-example",
+    "framework-agnostic",
+    "node",
+    "express",
+    "react",
+    "nextjs",
+    "vite",
+    "angular",
+    "svelte",
+    "bun",
+    "deno"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "bin": {
+    "envguard": "./bin/envguard.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/envguard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/envguard/issues"
+  },
+  "homepage": "https://github.com/yourusername/envguard#readme"
+}

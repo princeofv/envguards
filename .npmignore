@@ -1,0 +1,10 @@
+dist/
+*.log
+.env
+.env.local
+.DS_Store
+coverage/
+.nyc_output/
+tsconfig.json
+tsup.config.ts
+.gitignore
